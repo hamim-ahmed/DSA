@@ -1,0 +1,23 @@
+# Python specific
+venv/
+myenv/
+env/
+.env
+
+# IDE specific
+.idea/
+
+# Python compiled files
+# These two cover direct and nested __pycache__
+__pycache__/
+**/__pycache__/
+
+# These two cover direct and nested .pyc files
+*.pyc
+**/*.pyc
+
+# Logs and DB
+logs/
+*.log # Added this to catch any log file in a 'logs' directory or elsewhere
+**/logs/ # Catches logs directory anywhere
+*.cfg
