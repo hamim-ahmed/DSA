@@ -308,3 +308,5 @@ while True:
 
     else:
         print("\nWord not found.")
+
+#https://raw.githubusercontent.com/matthewreagan/WebstersEnglishDictionary/master/dictionary_compact.json
