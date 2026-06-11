@@ -9,27 +9,22 @@ def preorder_traverse(tree):
 
     while ptr is not None:
 
-        print(" [", end=" ")
-        for index in stack:
-            if stack is not None:
-                print(tree[index], end=" ")
-        print("]", end=" ")
 
         # Process current node
-        print(tree[ptr])
+        print(tree[ptr], end=" ")
 
         # to Push right child
-        right = 2 * ptr + 2
+        ptr_right = 2 * ptr + 2
 
-        if right < len(tree) and tree[right] is not None:   #if right child within the array length and not none
-            stack.append(right)
+        if tree[ptr_right] is not None and ptr_right < len(tree) :   #if right child within the array length and not none
+            stack.append(ptr_right)
 
         # Move to left child
-        left = 2 * ptr + 1
+        ptr_left = 2 * ptr + 1
 
-        if left < len(tree) and tree[left] is not None:
+        if tree[ptr_left] is not None and ptr_left < len(tree) :
 
-            ptr = left
+            ptr = ptr_left
 
         else:
 

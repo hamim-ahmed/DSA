@@ -24,13 +24,10 @@ def inorder_traverse(tree):
         if not stack:
             break
 
-        # Step 3
         ptr = stack.pop()
 
-        # Step 5
         print(tree[ptr], end=" ")
 
-        # Step 6
         right = 2 * ptr + 2
 
         if right < len(tree) and tree[right] is not None:
