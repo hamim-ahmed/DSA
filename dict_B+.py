@@ -300,7 +300,7 @@ while True:
 
     end = time.perf_counter()
 
-    print(f"\nSearch Time: {(end - start):.9f} seconds")
+    # print(f"\nSearch Time: {(end - start):.9f} seconds")
 
     if result:
         print("\nMeaning:\n")

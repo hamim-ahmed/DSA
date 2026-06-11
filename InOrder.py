@@ -8,7 +8,6 @@ def inorder_traverse(tree):
 
     while True:
 
-        # Step 2:
         # Move to leftmost node
         while ptr is not None:
 

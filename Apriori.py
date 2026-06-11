@@ -93,11 +93,12 @@ def get_transactions():
 
 
 # 🔹 Main
-transactions = get_transactions()
-min_support = float(input("Enter minimum support (e.g., 0.5): "))
+while True:
+    transactions = get_transactions()
+    min_support = float(input("Enter minimum support (e.g., 0.5): "))
 
-result = apriori(transactions, min_support)
+    result = apriori(transactions, min_support)
 
-print("\nFrequent Itemsets:")
-for itemset, support in result.items():
-    print(set(itemset), "->", round(support, 2))
+    print("\nFrequent Itemsets:")
+    for itemset, support in result.items():
+        print(set(itemset), "->", round(support, 2))
