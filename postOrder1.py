@@ -15,15 +15,15 @@ def postorder_traverse(tree):
         stack2.append(ptr)
 
         # Step 2.2
-        left = 2 * ptr + 1
-        right = 2 * ptr + 2
+        ptr_left = 2 * ptr + 1
+        ptr_right = 2 * ptr + 2
 
         # Push left first, then right
-        if left < len(tree) and tree[left] is not None:
-            stack1.append(left)
+        if ptr_left < len(tree) and tree[ptr_left] is not None:
+            stack1.append(ptr_left)
 
-        if right < len(tree) and tree[right] is not None:
-            stack1.append(right)
+        if ptr_right < len(tree) and tree[ptr_right] is not None:
+            stack1.append(ptr_right)
 
     # Step 3
     while stack2:
